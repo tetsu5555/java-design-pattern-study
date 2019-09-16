@@ -8,6 +8,7 @@ fi
 CONTAINER_ID=$(docker container ls -a | grep java-design-pattern | awk '{print $1}')
 if [ -n "$CONTAINER_ID" ]
 then
+  docker stop $CONTAINER_ID
   docker rm $CONTAINER_ID
   echo "delete container"
 fi
