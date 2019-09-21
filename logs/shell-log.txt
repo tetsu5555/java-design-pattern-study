@@ -1,0 +1,5 @@
+~/Desktop/java-design-pattern [master] $ ./runContainer.sh
+6b2f81f18d5d
+6b2f81f18d5d
+delete container
+root@897bd347d0cd:/#
