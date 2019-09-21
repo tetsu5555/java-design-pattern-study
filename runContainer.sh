@@ -1,3 +1,4 @@
+#!/bin/bash
 EXISTS=$(docker image ls | awk '{print $1}' | grep -E '^java$')
 if [ $EXISTS = "1" ]
 then
