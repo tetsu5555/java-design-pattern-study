@@ -33,6 +33,21 @@ Mementoクラス
       - Originatorはそのことを受けてMementoを作り、Caretakerに渡す
   - Mementoを保持しておく(内部の状態は見れない)
 
+## CaretakerとOrignatorを分ける意味
+- Caretaker
+  - どのタイミングでスナップショットをとるかを決める
+  - いつundoするかを決める
+  - mementoを保持
+- Originator
+  - mementoをつくる
+  - mementoを使って元の状態に戻す
+
+という役割分担を行っている。
+- 複数ステップのundoを行う
+- undoではなく、現在の状態をファイルに保存したい
+
+場合にOriginatorを変更しなくてもいい
+
 
 ## memo
 コンパイルするとunchecked警告が出たから以下のような書き換えを行った
