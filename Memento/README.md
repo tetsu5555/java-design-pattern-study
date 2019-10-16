@@ -27,3 +27,4 @@ Mementoクラス
 ↓
 <ClassName>.class.cast(<cast target>)
 ```
+@SuppressWarnings("unchecked")でもいける？
