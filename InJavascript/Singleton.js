@@ -49,3 +49,18 @@ var earth = new Earth();
 console.log(earth.constructor === Earth);
 console.log(earth.constructor);
 console.log(Earth);
+
+
+// クラスで書くとこんな感じか
+class Hoge {
+	constructor(name) {
+		if (Hoge.instance !== undefined) return Hoge.instance;
+		this.name = name;
+		Hoge.instance = this;
+    }
+}
+
+var hoge = new Hoge('name');
+var newHoge = new Hoge('name');
+
+console.log(hoge === newHoge);
